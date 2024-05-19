@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+        background: linear-gradient(to bottom, #ff9933, #ffffff, #138808);
+        margin: 0;
+        padding: 0;
+        color: #000080;
+        font-family: 'Avant Garde Md BT', sans-serif;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #photo-container {
+        position: relative;
+        margin-top: 20px;
+    }
+
+    #photo-container img {
+        width: 300px;
+        height: 300px;
+        display: block;
+        border: 2px solid #ccc;
+        padding: 10px;
+        box-shadow: 5px 5px 15px #888888;
+        cursor: pointer;
+    }
+
+    .sdg-point p {
+        display: none;
+    }
+
+    .sdg-point p.show {
+        display: block;
+    }
+
+    .sdg-point {
+        border: 2px solid #000080;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .sdg-point img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    table {
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    ul {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-family: 'Kaufmann Bd BT', cursive;
+        font-size: 28px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .comment-section {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    #comments-container {
+        margin-top: 20px;
+    }
+
+    .comment {
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+    }
+
+    .comment p {
+        margin: 0;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+</style>
+	
+	<title>SDG17</title>
+</head>
+<body>
+	<ul>
+               <h3 align="right"><a href="sdgpage.html">Home</a></h3>
+
+           </ul>
+	 <div id="photo-container">
+    <img src="goal17.png" alt="Your Photo" width="300" height="300" onclick="toggleDescription()">
+  </div>
+<h1 align="center">SDG - 17 & Indian Traditions</h1>
+<table>	
+
+
+
+
+
+ <tr>
+
+  <td class="sdg-point">
+  <img src="SDG 17 IMAGES\Community Engagement.jpg" align="center" height="200" width="250" onclick="togglePara('para1')">
+  <h2 align="center"> **Community Engagement**</h2>:<p class="sdg-para" id="para1"> Get involved in community service and engagement. Indian traditions often emphasise the importance of giving back to the community, which aligns with the idea of fostering partnerships for development.</p>
+></td>
+  <td class="sdg-point">
+  <img src="SDG 17 IMAGES\Cultural Exchange.jpg" align="center" height="200" width="250" onclick="togglePara('para2')">
+  <h2 align="center"> **Cultural Exchange**</h2>:<p class="sdg-para" id="para2"> Embrace cultural diversity and engage in cultural exchange activities. India is known for its rich cultural heritage, and learning about other cultures and traditions can promote global understanding and partnerships.</p>
+</p> 
+ <td class="sdg-point">
+  <img src="SDG 17 IMAGES\Non-Violence (Ahimsa).jpg" align="center" height="200" width="250" onclick="togglePara('para3')">
+  <h2 align="center">**Non-Violence (Ahimsa)**</h2>: <p class="sdg-para" id="para3">Practise non-violence and peaceful conflict resolution. Promoting peace and resolving disputes amicably is a fundamental principle of Indian traditions, and it contributes to building partnerships for a peaceful world.</p>
+</td>
+  <td class="sdg-point">
+  <img src="SDG 17 IMAGES\Interfaith Dialogue.jpg" align="center" height="200" width="250" onclick="togglePara('para4')">
+  <h2 align="center"> **Interfaith Dialogue**</h2>:<p class="sdg-para" id="para4"> Foster interfaith dialogue and understanding. India is a diverse country with multiple religions, and encouraging dialogue among different religious communities promotes tolerance and cooperation.</p>
+</td>
+ 
+</tr>
+
+  
+
+
+
+<tr>
+  <td class="sdg-point">
+  <img src="SDG 17 IMAGES\Yoga and Meditation.jpg" align="center" height="200" width="250" onclick="togglePara('para5')"> 
+  <h2 align="center">**Yoga and Meditation**</h2>: <p class="sdg-para" id="para5">Explore practices like yoga and meditation, which originate from Indian traditions. These practices promote physical and mental well-being, contributing to the overall goal of sustainable development.</p>
+</td>
+  <td class="sdg-point">
+  <img src="SDG 17 IMAGES\Volunteering.jpg" align="center" height="200" width="250" onclick="togglePara('para6')">
+  <h2 align="center"> **Volunteering**</h2>: <p class="sdg-para" id="para6">Engage in volunteer work, both locally and globally. Volunteering helps build partnerships and networks with individuals and organisations dedicated to various sustainable development goals.</p>
+</td>
+  <td class="sdg-point">
+  <img src="SDG 17 IMAGES\Philanthropy.jpg" align="center" height="200" width="250" onclick="togglePara('para7')">
+  <h2 align="center"> **Philanthropy**</h2>: <p class="sdg-para" id="para7">Cultivate a spirit of giving and philanthropy. Even small contributions can make a difference in the lives of those in need, and philanthropy is a key element of Indian traditions.</p>
+</td>
+ <td class="sdg-point"> 
+  <img src="SDG 17 IMAGES\Education.jpg" align="center" height="200" width="250" onclick="togglePara('para8')">
+  <h2 align="center"> **Education**</h2>:<p class="sdg-para" id="para8"> Prioritise education and lifelong learning. Education is a powerful tool for personal growth and development, and it also fosters global partnerships by connecting people with knowledge and information.</p>
+</td>
+</tr>
+</table>
+<script>
+ function toggleDescription() {
+      var paras = document.getElementsByClassName("sdg-para");
+      for (var i = 0; i < paras.length; i++) {
+          paras[i].classList.toggle("show");
+      }
+  }
+
+  function togglePara(paraId) {
+      var para = document.getElementById(paraId);
+      para.classList.toggle("show");
+  }
+
+</script>
+</body>
+</html>

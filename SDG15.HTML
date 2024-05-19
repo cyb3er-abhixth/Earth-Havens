@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+        background: linear-gradient(to bottom, #ff9933, #ffffff, #138808);
+        margin: 0;
+        padding: 0;
+        color: #000080;
+        font-family: 'Avant Garde Md BT', sans-serif;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #photo-container {
+        position: relative;
+        margin-top: 20px;
+    }
+
+    #photo-container img {
+        width: 300px;
+        height: 300px;
+        display: block;
+        border: 2px solid #ccc;
+        padding: 10px;
+        box-shadow: 5px 5px 15px #888888;
+        cursor: pointer;
+    }
+
+    .sdg-point p {
+        display: none;
+    }
+
+    .sdg-point p.show {
+        display: block;
+    }
+
+    .sdg-point {
+        border: 2px solid #000080;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .sdg-point img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    table {
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    ul {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-family: 'Kaufmann Bd BT', cursive;
+        font-size: 28px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .comment-section {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    #comments-container {
+        margin-top: 20px;
+    }
+
+    .comment {
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+    }
+
+    .comment p {
+        margin: 0;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+</style>
+	
+	<title>SDG15</title>
+</head>
+<body>
+	<ul>
+               <h3 align="right"><a href="sdgpage.html">Home</a></h3>
+
+           </ul>
+	 <div id="photo-container">
+    <img src="goal15.png" alt="Your Photo" width="300" height="300" onclick="toggleDescription()">
+  </div>
+<h1 align="center">SDG - 15 & Indian Traditions</h1>
+<table>	
+
+
+
+
+ <tr>
+  <td class="sdg-point">
+  <img src="SDG 15 IMAGES\Sustainable Living.jpg" align="center" height="200" width="250"  onclick="togglePara('para1')">
+  <h2 align="center">  **Sustainable Living**</h2>: <p class="sdg-para" id="para1"> Adopt sustainable living practices such as reducing waste, conserving water, and minimising energy consumption to reduce your ecological footprint.</p>
+</h2></td>
+  <td class="sdg-point">
+  <img src="SDG 15 IMAGES\Nature Walks.jpg" align="center" height="200" width="250"  onclick="togglePara('para2')">
+  <h2 align="center"> **Nature Walks**</h2>: <p class="sdg-para" id="para2"> Explore and appreciate the natural world by taking regular nature walks or hikes. This can help foster a deeper connection with the environment and encourage conservation.</p>
+</p> 
+ <td class="sdg-point">
+  <img src="SDG 15 IMAGES\Wildlife Conservation.jpg" align="center" height="200" width="250"  onclick="togglePara('para3')">
+  <h2 align="center">**Wildlife Conservation**</h2>:  <p class="sdg-para" id="para3">Learn about the importance of wildlife conservation in India. Support organisations and initiatives dedicated to protecting endangered species and their habitats.</p>
+</td>
+  <td class="sdg-point"> 
+  <img src="SDG 15 IMAGES\Waste Management.jpg" align="center" height="200" width="250"  onclick="togglePara('para4')">
+  <h2 align="center"> **Waste Management**</h2>: <p class="sdg-para" id="para4"> Practise responsible waste disposal and recycling. Reduce plastic usage and promote the recycling of materials to prevent pollution and land degradation.</p>
+</td>
+</tr>
+
+
+<tr>
+  <td class="sdg-point">
+ <img src="SDG 15 IMAGES\Biodiversity Awareness.jpg" align="center" height="200" width="250"  onclick="togglePara('para5')">
+ ><h2 align="center">**Biodiversity Awareness**</h2>:  <p class="sdg-para" id="para5">Educate yourself and others about India's rich biodiversity. Learn about the various plant and animal species native to your region and their ecological significance.</p>
+</td>
+  <td class="sdg-point">
+  <img src="SDG 15 IMAGES\Promote Sustainable Agriculture.jpg" align="center" height="200" width="250"  onclick="togglePara('para6')"> 
+  <h2 align="center"> **Promote Sustainable Agriculture**</h2>:  <p class="sdg-para" id="para6"> Encourage the use of sustainable farming practices, such as organic farming and crop rotation, to maintain healthy soils and reduce land degradation.</p>
+</td>
+  <td class="sdg-point">
+  <img src="SDG 15 IMAGES\Water Conservation.jpg" align="center" height="200" width="250"  onclick="togglePara('para7')">
+  <h2 align="center">**Water Conservation**</h2>:  <p class="sdg-para" id="para7">Conserve water resources by fixing leaks, using water-saving appliances, and advocating for responsible water management practices in your community.</p>
+</td>
+ <td class="sdg-point"> 
+  <img src="SDG 15 IMAGES/dfg.jpg" align="center" height="200" width="250"  onclick="togglePara('para8')">
+  <h2 align="center"> **Environmental Advocacy**</h2>: <p class="sdg-para" id="para8">  Become an advocate for environmental protection by joining or starting youth-led environmental groups. Raise awareness about the importance of preserving India's natural heritage.</p>
+</td>
+</tr>
+</table>
+<script>
+  function toggleDescription() {
+      var paras = document.getElementsByClassName("sdg-para");
+      for (var i = 0; i < paras.length; i++) {
+          paras[i].classList.toggle("show");
+      }
+  }
+
+  function togglePara(paraId) {
+      var para = document.getElementById(paraId);
+      para.classList.toggle("show");
+  }
+
+  
+</script>
+</body>
+</html>

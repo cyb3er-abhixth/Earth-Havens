@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+        body {
+            background: linear-gradient(to bottom, #ff9933, #ffffff, #138808);
+            margin: 0;
+            padding: 0;
+            color: #000080;
+            font-family: 'Avant Garde Md BT', sans-serif;
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #photo-container {
+            position: relative;
+            margin-top: 20px;
+        }
+
+        #photo-container img {
+            width: 300px;
+            height: 300px;
+            display: block;
+            border: 2px solid #ccc;
+            padding: 10px;
+            box-shadow: 5px 5px 15px #888888;
+            cursor: pointer;
+        }
+
+        .sdg-point p {
+            display: none;
+        }
+
+        .sdg-point p.show {
+            display: block;
+        }
+
+        .sdg-point {
+            border: 2px solid #000080;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .sdg-point img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        ul {
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        h1 {
+            font-family: 'Kaufmann Bd BT', cursive;
+            font-size: 28px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .comment-section {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        #comments-container {
+            margin-top: 20px;
+        }
+
+        .comment {
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .comment p {
+            margin: 0;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+</style>
+	
+	<title>SDG3</title>
+</head>
+<body>
+	<ul>
+        <h3 align="right"><a href="sdgpage.html">Home</a></h3>
+    </ul>
+
+    <div id="photo-container">
+        <img src="goal3.png" alt="Your Photo" width="300" height="300" onclick="toggleDescription()">
+    </div>
+
+    <h1>SDG - 3 & Indian Traditions</h1><br>
+
+    <table>
+        <tr>
+            <td class="sdg-point">
+                <img src="SDG 3 IMAGES\Yoga and Meditation.JPG" align="center" height="200" width="250" onclick="togglePara('para1')">
+                <h2>Yoga and Meditation</h2>
+                <p class="sdg-para" id="para1">Practising yoga and meditation can improve physical and mental health. These ancient Indian traditions promote relaxation, reduce stress, and enhance overall well-being.</p>
+            </td>
+
+            <td class="sdg-point">
+                <img src="SDG 3 IMAGES\Ayurveda.jpg" align="center" height="200" width="250" onclick="togglePara('para2')">
+                <h2>Ayurveda</h2>
+                <p class="sdg-para" id="para2">Learning about Ayurveda, the traditional Indian system of medicine, can help teenagers understand the importance of holistic health and natural remedies.</p>
+            </td>
+
+            <td class="sdg-point">
+                <img src="SDG 3 IMAGES\Healthy Diet.jpg" align="center" height="200" width="250" onclick="togglePara('para3')">
+                <h2>Healthy Diet</h2>
+                <p class="sdg-para" id="para3">Embrace traditional Indian dietary practices that include a variety of fruits, vegetables, and spices. Avoid processed foods and fast food, and maintain a balanced diet.</p>
+            </td>
+
+            <td class="sdg-point">
+                <img src="SDG 3 IMAGES\Physical Activity.jpg" align="center" height="200" width="250" onclick="togglePara('para4')">
+                <h2>Physical Activity</h2>
+                <p class="sdg-para" id="para4">Engage in traditional Indian physical activities like playing sports, practising martial arts (e.g., Kalari), or taking up dance forms like Bharatanatyam or Kathak.</p>
+            </td>
+
+            <td class="sdg-point">
+                <img src="SDG 3 IMAGES\Cultural Fitnes.jpg" align="center" height="200" width="250" onclick="togglePara('para5')">
+                <h2>Cultural Fitness</h2>
+                <p class="sdg-para" id="para5">Participate in traditional dance and music forms that provide both physical exercise and cultural enrichment.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="sdg-point">
+                <img src="SDG 3 IMAGES\Herbal Remedies.jpg" align="center" height="200" width="250" onclick="togglePara('para6')">
+                <h2>Herbal Remedies</h2>
+                <p class="sdg-para" id="para6">Learn about the benefits of herbs and natural remedies used in traditional Indian medicine for common ailments and minor health issues.</p>
+            </td>
+
+            <td class="sdg-point">
+                <img src="SDG 3 IMAGES\Fasting.jpg" align="center" height="200" width="250" onclick="togglePara('para7')">
+                <h2>Fasting</h2>
+                <p class="sdg-para" id="para7">Explore traditional fasting practices like intermittent fasting or Ekadashi fasting, which can promote better digestion and detoxification when done in a healthy manner.</p>
+            </td>
+
+            <td class="sdg-point">
+                <img src="SDG 3 IMAGES\Community Health.jpg" align="center" height="200" width="250" onclick="togglePara('para8')">
+                <h2>Community Health</h2>
+                <p class="sdg-para" id="para8">Volunteer in community health programs and initiatives that provide healthcare services to underserved populations.</p>
+            </td>
+
+            <td class="sdg-point">
+                <img src="SDG 3 IMAGES\Mental Health Awareness.jpg" align="center" height="200" width="250" onclick="togglePara('para9')">
+                <h2>Mental Health Awareness</h2>
+                <p class="sdg-para" id="para9">Raise awareness about mental health issues and the importance of seeking help when needed, breaking the stigma often associated with mental health in some Indian communities.</p>
+            </td>
+        </tr>
+    </table>
+
+  
+
+    <script>
+        function toggleDescription() {
+            var paras = document.getElementsByClassName("sdg-para");
+            for (var i = 0; i < paras.length; i++) {
+                paras[i].classList.toggle("show");
+            }
+        }
+
+        function togglePara(paraId) {
+            var para = document.getElementById(paraId);
+            para.classList.toggle("show");
+        }
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG2 - Indian Traditions</title>
+    <link rel="icon" href="mascot.png">
+    <style>
+      body {
+          background: linear-gradient(to bottom, #ff9933, #ffffff, #138808);
+          margin: 0;
+          padding: 0;
+          color: #000080;
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+      }
+      h1, h2 {
+          text-align: center;
+          font-family: 'Kaufmann Bd BT', cursive;
+      }
+      #photo-container {
+          text-align: center;
+          margin-top: 20px;
+      }
+      #photo-container img {
+          width: 300px;
+          height: 300px;
+          border: 2px solid #ccc;
+          padding: 10px;
+          box-shadow: 5px 5px 15px #888888;
+          cursor: pointer;
+      }
+      .sdg-point p {
+          display: none;
+      }
+      .sdg-point p.show {
+          display: block;
+      }
+      .sdg-point {
+          border: 2px solid #000080;
+          padding: 10px;
+          margin: 10px;
+          text-align: center;
+      }
+      .sdg-point img {
+          display: block;
+          margin: 0 auto;
+      }
+      table {
+          margin: 20px auto;
+          border-collapse: collapse;
+      }
+      td {
+          padding: 10px;
+      }
+      ul {
+          text-align: center;
+          padding: 0;
+          margin: 0;
+      }
+      li {
+          display: inline;
+          margin-right: 10px;
+      }
+  </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="sdgpage.html">Home</a></li>
+        </ul>
+    </header>
+    <div id="photo-container">
+        <img src="goal2.png" alt="Your Photo" onclick="toggleDescription()">
+    </div>
+    <h1>SDG - 2 & Indian Traditions</h1>
+    <table>
+        <tr>
+            <td class="sdg-point">
+                <img src="SDG 2 IMAGES\Vegetarianism.JPG" alt="Vegetarianism" height="200" width="250" onclick="togglePara('para1')">
+                <h2>Vegetarianism</h2>
+                <p class="sdg-para" id="para1">Learn and practice vegetarianism as a sustainable dietary choice, reducing the environmental impact of food production.</p>
+            </td>
+            <td class="sdg-point">
+                <img src="SDG 2 IMAGES\Gardening.JPG" alt="Gardening" height="200" width="250" onclick="togglePara('para2')">
+                <h2>Gardening</h2>
+                <p class="sdg-para" id="para2">Get involved in gardening to promote sustainable agriculture and improve access to fresh produce.</p>
+            </td>
+            <td class="sdg-point" >
+                <img src="SDG 2 IMAGES\Food Preservation.jpg" alt="Food Preservation" height="200" width="250" onclick="togglePara('para3')">
+                <h2>Food Preservation</h2>
+                <p class="sdg-para" id="para3">Learn traditional methods of food preservation to reduce food waste and extend the shelf life of produce.</p>
+            </td>
+            <td class="sdg-point" >
+                <img src="SDG 2 IMAGES\Composting.jpg" alt="Composting" height="200" width="250" onclick="togglePara('para4')">
+                <h2>Composting</h2>
+                <p class="sdg-para" id="para4">>Compost kitchen scraps and organic waste to enrich soil and reduce the need for chemical fertilizers.</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="sdg-point" >
+                <img src="SDG 2 IMAGES\Support Local Farmers.jpg" alt="Support Local Farmers" height="200" width="250" onclick="togglePara('para5')">
+                <h2>Support Local Farmers</h2>
+                <p class="sdg-para" id="para5">Buy locally grown produce to support local farmers and reduce the carbon footprint of food transportation.</p>
+            </td>
+            <td class="sdg-point" >
+                <img src="SDG 2 IMAGES\Traditional Cooking.jpg" alt="Traditional Cooking" height="200" width="250" onclick="togglePara('para6')">
+                <h2>Traditional Cooking</h2>
+                <p class="sdg-para" id="para6">Learn traditional cooking methods to promote cultural heritage and use locally sourced ingredients.</p>
+            </td>
+            <td class="sdg-point" >
+                <img src="SDG 2 IMAGES\Seed Saving.jpg" alt="Seed Saving" height="200" width="250" onclick="togglePara('para7')">
+                <h2>Seed Saving</h2>
+                <p class="sdg-para" id="para7">Save seeds from your garden or local crops to preserve biodiversity and promote sustainable agriculture.</p>
+            </td>
+            <td class="sdg-point>
+                <img src="SDG 2 IMAGES\Community Initiatives.jpg" alt="Community Initiatives" height="200" width="250" onclick="togglePara('para8')">
+                <h2>Community Initiatives</h2>
+                <p class="sdg-para" id="para8">Participate in community initiatives such as farmers' markets and food co-ops to promote local food systems.</p>
+            </td>
+        </tr>
+      
+    </table>
+
+    <script>
+      function toggleDescription() {
+          var paragraphs = document.getElementsByClassName("sdg-para");
+          for (var i = 0; i < paragraphs.length; i++) {
+              paragraphs[i].classList.toggle("show");
+          }
+      }
+
+      function togglePara(paraId) {
+          var para = document.getElementById(paraId);
+          para.classList.toggle("show");
+      }
+  </script>
+</body>
+</html>

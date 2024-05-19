@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG1 - Indian Traditions</title>
+    <link rel="icon" href="mascot.png">
+    <style>
+        body {
+            background: #EA1E31;
+            margin: 0;
+            padding: 0;
+            color: #000080;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        h1, h2 {
+            text-align: center;
+            font-family: 'Kaufmann Bd BT', cursive;
+        }
+        #photo-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #photo-container img {
+            width: 300px;
+            height: 300px;
+            border: 2px solid #ccc;
+            padding: 10px;
+            box-shadow: 5px 5px 15px #888888;
+            cursor: pointer;
+        }
+        .sdg-point p {
+            display: none;
+        }
+        .sdg-point p.show {
+            display: block;
+        }
+        .sdg-point {
+            border: 2px solid #000080;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        .sdg-point img {
+            display: block;
+            margin: 0 auto;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+        }
+        ul {
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            display: inline;
+            margin-right: 10px;
+        }
+        a{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="sdgpage.html">Home</a></li>
+        </ul>
+    </header>
+    <div id="photo-container">
+        <img src="goal1.png" alt="Your Photo" onclick="toggleDescription()">
+    </div>
+    <h1>SDG - 1 & Indian Traditions</h1>
+    <table> 
+        <tr>
+            <td class="sdg-point">
+                <img src="SDG 1 IMAGES\SUPPORTLOCALECONOMY.png" alt="Support Local Economies" height="200" width="250" onclick="togglePara('para1')">
+                <h2>Support Local Economies</h2>
+                <p class="sdg-para" id="para1">Buy locally produced goods and support small businesses in your community to stimulate economic growth and create job opportunities.</p>
+            </td>
+            <td class="sdg-point">
+                <img src="SDG 1 IMAGES\volunteer.jpg" alt="Volunteer" height="200" width="250" onclick="togglePara('para2')">
+                <h2>Volunteer</h2>
+                <p class="sdg-para" id="para2">Get involved in local volunteering initiatives that focus on helping disadvantaged communities, such as serving meals at a shelter or participating in community clean-up projects.</p>
+            </td>
+            <td class="sdg-point">
+                <img src="SDG 1 IMAGES\Education for All.jpg" alt="Education for All" height="200" width="300" onclick="togglePara('para3')">
+                <h2>Education for All</h2>
+                <p class="sdg-para" id="para3">Advocate for and support initiatives that ensure access to quality education for all, including underprivileged children. You can also tutor or mentor fellow students who may need extra help with their studies.</p>
+            </td>
+            <td class="sdg-point">
+                <img src="SDG 1 IMAGES\Donate to Charities.jpg" alt="Donate to Charities" height="200" width="250" onclick="togglePara('para4')">
+                <h2>Donate to Charities</h2>
+                <p class="sdg-para" id="para4">Regularly donate to reputable charities or organizations that work toward poverty alleviation and provide essential services to those in need.</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="sdg-point">
+                <img src="SDG 1 IMAGES\Promote Financial Literacy.jpg" alt="Promote Financial Literacy" height="200" width="250" onclick="togglePara('para5')">
+                <h2>Promote Financial Literacy</h2>
+                <p class="sdg-para" id="para5">Educate yourself and others about financial literacy and responsible money management. Share this knowledge with peers and community members to help them make informed financial decisions.</p>
+            </td>
+            <td class="sdg-point">
+                <img src="SDG 1 IMAGES\Advocate for Social Inclusion.jpg" alt="Advocate for Social Inclusion" height="200" width="250" onclick="togglePara('para6')">
+                <h2>Advocate for Social Inclusion</h2>
+                <p class="sdg-para" id="para6">Promote inclusivity and advocate for the rights of marginalized communities. Encourage diversity and tolerance within your school and community.</p>
+            </td>
+            <td class="sdg-point">
+                <img src="SDG 1 IMAGES\Conserve Resources.jpg" alt="Conserve Resources" height="200" width="300" onclick="togglePara('para7')">
+                <h2>Conserve Resources</h2>
+                <p class="sdg-para" id="para7">Conserve resources like water and electricity at home and encourage your family to do the same. This can lead to cost savings that can be directed toward poverty reduction efforts.</p>
+            </td>
+            <td class="sdg-point">
+                <img src="SDG 1 IMAGES\Raise Awareness.jpg" alt="Raise Awareness" height="200" width="300" onclick="togglePara('para8')">
+                <h2>Raise Awareness</h2>
+                <p class="sdg-para" id="para8">Use social media and other platforms to raise awareness about poverty-related issues and the importance of SDG 1. Share success stories and inspire others to take action.</p>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function toggleDescription() {
+            var paragraphs = document.getElementsByClassName("sdg-para");
+            for (var i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].classList.toggle("show");
+            }
+        }
+
+        function togglePara(paraId) {
+            var para = document.getElementById(paraId);
+            para.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

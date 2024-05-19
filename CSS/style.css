@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  ol,
+  ul {
+    list-style: none;
+  }
+  
+  .del {
+    text-decoration: line-through;
+  }
+  
+  body {
+    font-family: Courier New, "Arial, Courier New, sans-serif";
+    font-size: 17px;
+    color: rgba(251, 255, 29, 0.651);
+    overflow-x: hidden;
+    min-width: 320px;
+    font-weight: 400;
+  }
+  
+  input,
+  textarea,
+  select {
+    font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+  }
+  
+  a {
+    color: #1c2c40;
+  }
+  
+  a:hover,
+  .submit:hover {
+    filter: alpha(opacity=85);
+    -moz-opacity: 0.85;
+    -khtml-opacity: 0.85;
+    opacity: 0.85;
+  }
+  
+  .thumb {
+    display: block;
+  }
+  
+  .thumb img {
+    display: block;
+    width: 100%;
+  }
+  
+  p {
+    line-height: 1.6em;
+    font-size: 16px;
+    font-family: "Circular-Std-Regular", Arial;
+    font-weight: 400;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  br.clear {
+    clear: both;
+    line-height: 0;
+  }
+  
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+  
+  @font-face {
+    font-family: "Circular-Std-Regular";
+    src: url("../fonts/CircularStd-Regular.woff2") format("woff2");
+    src: url("../fonts/CircularStd-Regular.woff") format("woff");
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Circular-Std-Bold";
+    src: url("../fonts/CircularStd-Bold.woff2") format("woff2");
+    src: url("../fonts/CircularStd-Bold.woff") format("woff");
+    font-style: normal;
+  }
+  ::-moz-placeholder {
+    color: #d3cfcb;
+  }
+  ::placeholder {
+    color: #d3cfcb;
+  }
+
+  
+
+
+
+
+
+
+section#main { 
+    background: url(../Images/bg.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 160vh;
+}
+h1{
+    font-family: "Circular-Std-Bold";
+    font-size: 50px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: bolder;
+    color: #000;
+}
+h2{
+    font-family: "Circular-Std-Bold";
+    font-size: 40px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #000;
+}
+#lightgallery {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	float: left;
+	width: 100%;
+
+}
+#lightgallery a{
+	float: left;
+	width: 17%;
+    padding-left: 80px;
+}
+#lightgallery a img{
+	display: block;
+    width: 250px;
+    height: 300px;
+}
+ul li:nth-child(5n){
+	margin-right: 0;
+}
+
+img{
+  height: 225px;
+  width: 225px;
+}
+
+

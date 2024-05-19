@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+        background: linear-gradient(to bottom, #ff9933, #ffffff, #138808);
+        margin: 0;
+        padding: 0;
+        color: #000080;
+        font-family: 'Avant Garde Md BT', sans-serif;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #photo-container {
+        position: relative;
+        margin-top: 20px;
+    }
+
+    #photo-container img {
+        width: 300px;
+        height: 300px;
+        display: block;
+        border: 2px solid #ccc;
+        padding: 10px;
+        box-shadow: 5px 5px 15px #888888;
+        cursor: pointer;
+    }
+
+    .sdg-point p {
+        display: none;
+    }
+
+    .sdg-point p.show {
+        display: block;
+    }
+
+    .sdg-point {
+        border: 2px solid #000080;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .sdg-point img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    table {
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    ul {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-family: 'Kaufmann Bd BT', cursive;
+        font-size: 28px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .comment-section {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    #comments-container {
+        margin-top: 20px;
+    }
+
+    .comment {
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+    }
+
+    .comment p {
+        margin: 0;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+</style>
+	
+	<title>SDG13</title>
+</head>
+<body>
+	<ul>
+               <h3 align="right"><a href="sdgpage.html">Home</a></h3>
+
+           </ul>
+	 <div id="photo-container">
+    <img src="goal13.png" alt="Your Photo" width="300" height="300" onclick="toggleDescription()">
+  </div>
+<h1 align="center">SDG - 13 & Indian Traditions</h1>
+<table>	
+
+ <tr>
+ 	<td class="sdg-point">
+    <img src="SDG 13 IMAGES\Reduce Water Usage.JPG" align="center" height="200" width="250" onclick="togglePara('para1')">
+ 	<h2 align="center"> **Reduce Water Usage**</h2>: 
+ <p class="sdg-para" id="para1">Embrace the Indian tradition of conserving water by using it judiciously. Fix any leaks, turn off taps when not in use, and practise rainwater harvesting if possible.
+</p></td>
+ <td class="sdg-point">
+  <img src="SDG 13 IMAGES\Plant Trees,JPG.jfif" align="center" height="200" width="250" onclick="togglePara('para2')">
+  <h2 align="center"> **Plant Trees** </h2> <p class="sdg-para" id="para2">Hindu traditions have long revered trees. Planting trees or participating in tree-planting drives can help combat climate change by absorbing carbon dioxide.</p>
+</td>
+<td class="sdg-point">
+  <img src="SDG 13 IMAGES\Avoid Single-Use Plastics.JPG" align="center" height="200" width="250" onclick="togglePara('para3')">
+  <h2 align="center">**Avoid Single-Use Plastics*</h2>: <p class="sdg-para" id="para3"> Indian traditions often emphasise the importance of respecting and protecting the environment. Avoid single-use plastics like plastic bags and utensils to reduce pollution.</p>
+</td>
+ <td class="sdg-point">
+  <img src="SDG 13 IMAGES\Bicycle or Walk.JPG" align="center" height="200" width="250" onclick="togglePara('para4')">
+  <h2 align="center">**Bicycle or Walk**</h2>:<p class="sdg-para" id="para4"> Emulate the traditional practice of walking or cycling for short distances instead of relying on motorised transport. This reduces carbon emissions.</p>
+</td></tr>
+
+
+
+ 
+
+
+ <tr><td class="sdg-point">
+  <img src="SDG 13 IMAGES\Conserve Energy.jpg" align="center" height="200" width="250" onclick="togglePara('para5')">
+  <h2 align="center"> **Conserve Energy**</h2>: <p class="sdg-para" id="para5"> Implement energy-saving habits at home, such as turning off lights and appliances when not in use. Use energy-efficient bulbs and appliances to reduce electricity consumption.</p>
+</td>
+ <td class="sdg-point">
+  <img src="SDG 13 IMAGES\Learn About Indigenous Knowledge.jpg" align="center" height="200" width="250" onclick="togglePara('para6')">
+  <h2 align="center">**Learn About Indigenous Knowledge**</h2>: <p class="sdg-para" id="para6">Explore traditional Indian knowledge related to sustainable agriculture and natural resource management. This can inspire eco-friendly practices.</p>
+</td>
+ <td class="sdg-point">
+  <img src="SDG 13 IMAGES\Participate in Clean-up Drives.jpg" align="center" height="200" width="250" onclick="togglePara('para7')">
+  <h2 align="center">**Participate in Clean-up Drives**</h2>: <p class="sdg-para" id="para7">Join local clean-up initiatives or organise one in your community to clean rivers, beaches, or public spaces. This helps preserve natural environments.</p>
+</td>
+ <td class="sdg-point">
+  <img src="SDG 13 IMAGES\Raise Awareness.jpg" align="center" height="200" width="250" onclick="togglePara('para8')">
+  <h2 align="center">**Raise Awareness**</h2>: <p class="sdg-para" id="para8">Use social media and community gatherings to raise awareness about climate change and its impacts. Share information and encourage others to take action.</p>
+</td>
+
+</tr>
+</table>
+   
+<script>
+  function toggleDescription() {
+      var paras = document.getElementsByClassName("sdg-para");
+      for (var i = 0; i < paras.length; i++) {
+          paras[i].classList.toggle("show");
+      }
+  }
+
+  function togglePara(paraId) {
+      var para = document.getElementById(paraId);
+      para.classList.toggle("show");
+  }
+
+  
+</script>
+
+</body>
+</html>

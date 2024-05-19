@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+        background: linear-gradient(to bottom, #ff9933, #ffffff, #138808);
+        margin: 0;
+        padding: 0;
+        color: #000080;
+        font-family: 'Avant Garde Md BT', sans-serif;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #photo-container {
+        position: relative;
+        margin-top: 20px;
+    }
+
+    #photo-container img {
+        width: 300px;
+        height: 300px;
+        display: block;
+        border: 2px solid #ccc;
+        padding: 10px;
+        box-shadow: 5px 5px 15px #888888;
+        cursor: pointer;
+    }
+
+    .sdg-point p {
+        display: none;
+    }
+
+    .sdg-point p.show {
+        display: block;
+    }
+
+    .sdg-point {
+        border: 2px solid #000080;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .sdg-point img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    table {
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    ul {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-family: 'Kaufmann Bd BT', cursive;
+        font-size: 28px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .comment-section {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    #comments-container {
+        margin-top: 20px;
+    }
+
+    .comment {
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+    }
+
+    .comment p {
+        margin: 0;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+</style>
+	<title>SDG11</title>
+</head>
+<body>
+	<ul>
+               <h3 align="right"><a href="sdgpage.html">Home</a></h3>
+
+           </ul>
+	 <div id="photo-container">
+    <img src="goal11.png" alt="Your Photo" width="300" height="300" onclick="toggleDescription()">
+  </div>
+<h1 align="center">SDG - 11 & Indian Traditions</h1>
+<table>	
+
+
+ <tr>
+ 	<td class="sdg-point">
+    <img src="SDG 11 IMAGES\Community Cleanliness.jpg" align="center" height="200" width="250" onclick="togglePara('para1')">
+ 	<h2 align="center"> **Community Cleanliness**</h2>: 
+ <p class="sdg-para" id="para1">Participate in or initiate community clean-up drives in your neighbourhood to keep the surroundings clean and promote a sustainable living environment.
+</p></td>
+ <td class="sdg-point">
+  <img src="SDG 11 IMAGES\Water Conservation.jpg" align="center" height="200" width="250" onclick="togglePara('para2')">  
+  <h2 align="center">**Water Conservation**</h2>:
+  <p class="sdg-para" id="para2"> Learn about traditional Indian methods of water conservation, such as rainwater harvesting, and encourage their implementation in your area to ensure a sustainable water supply.</p>
+</h2></td>
+ <td class="sdg-point">
+  <img src="SDG 11 IMAGES\Public Transport.jpg" align="center" height="200" width="250" onclick="togglePara('para3')">
+  <h2 align="center"> **Public Transport**</h2>:
+  <p class="sdg-para" id="para3">Advocate for the use of public transportation or carpooling to reduce traffic congestion, air pollution, and the carbon footprint in your city.</p>
+</p> 
+<td class="sdg-point">
+  <img src="SDG 11 IMAGES\Tree Planting.jpg" align="center" height="200" width="250" onclick="togglePara('para4')">
+  <h2 align="center">**Tree Planting**</h2>: 
+  <p class="sdg-para" id="para4">Promote awareness of traditional Indian architectural practices that can help in building more sustainable and climate-resilient structures.</p>
+</td>
+
+
+
+
+ <tr><td class="sdg-point">
+  <img src="SDG 11 IMAGES\omote Traditional Architecture.jpg" align="center" height="200" width="250" onclick="togglePara('para5')">
+  <h2 align="center"> **Promote Traditional Architecture**</h2>:
+   <p class="sdg-para" id="para5">Promote awareness of traditional Indian architectural practices that can help in building more sustainable and climate-resilient structures.</p>
+</td>
+ <td class="sdg-point">
+  <img src="SDG 11 IMAGES\Support Local Markets.jpg" align="center" height="200" width="250" onclick="togglePara('para6')">
+  <h2 align="center">**Support Local Markets**</h2>: 
+  <p class="sdg-para" id="para6">Buy products from local artisans and markets to promote sustainable, locally sourced goods and help preserve traditional craftsmanship.</p>
+</td>
+ <td class="sdg-point">
+  <img src="SDG 11 IMAGES\Heritage Preservation.jpg" align="center" height="200" width="250" onclick="togglePara('para7')">
+  <h2 align="center"> **Heritage Preservation**</h2>:
+   <p class="sdg-para" id="para7">Get involved in efforts to protect and restore historical monuments and heritage sites in your city, preserving cultural identity.</p>
+</td>
+ <td class="sdg-point"> 
+  <img src="SDG 11 IMAGES\Community Gardens.jpg" align="center" height="200" width="250" onclick="togglePara('para8')">
+  <h2 align="center"> **Community Gardens**</h2>:
+   <p class="sdg-para" id="para8">Create or participate in community gardens or urban farming projects to promote green spaces and access to fresh produce in urban areas.</p>
+</td>
+</tr>
+</table>
+<script>
+  function toggleDescription() {
+      var paras = document.getElementsByClassName("sdg-para");
+      for (var i = 0; i < paras.length; i++) {
+          paras[i].classList.toggle("show");
+      }
+  }
+
+  function togglePara(paraId) {
+      var para = document.getElementById(paraId);
+      para.classList.toggle("show");
+  }
+
+  
+</script>
+</body>
+</html>
